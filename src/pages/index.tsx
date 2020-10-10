@@ -1,18 +1,12 @@
 import React from "react"
-import Link from "next/link"
-import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import useSiteMetadata from "../hooks/sitemetadata"
-import Footer from "../components/footer"
-
 import Row from "../components/row"
-import AltView from "../components/altview"
 import ZoomImage from "../components/zoomimage"
 import Container from "../components/container"
 import ExtLink from "../components/extlink"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import WhiteLink from "../components/whitelink"
 import Header from "../components/header"
 import title2img from "../assets/images/title2.png"
 
@@ -28,7 +22,7 @@ const Index: React.FC<IndexProps> = ({ data, location }) => {
     <Layout path="/" title={siteTitle}>
       <SEO title="Home" />
 
-      <Header data={data} />
+      <Header />
 
       {/* <AltView size="md"> */}
       {/* <div>

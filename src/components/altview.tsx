@@ -4,6 +4,7 @@ type AltView = {
   size?: string
   className?: string
   style?: any
+  children: Array<any>
 }
 
 const AltView: React.FC<AltView> = React.forwardRef(
