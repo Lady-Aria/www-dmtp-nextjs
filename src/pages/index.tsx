@@ -75,7 +75,7 @@ const Index: React.FC = () => {
           </div>
         </Row> */}
         <Row isCentered={true}>
-          <div className="w-full lg:w-4/10 shadow-md mt-4">
+          <div className="w-full lg:w-4/10 mt-4">
             <ZoomImage fluid={title2img} alt="Title 2" />
           </div>
         </Row>
