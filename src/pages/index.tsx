@@ -10,12 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Header from "../components/header"
 import title2img from "../assets/images/title2.png"
 
-type IndexProps = {
-  data: any
-  location: string
-}
-
-const Index: React.FC<IndexProps> = ({ data, location }) => {
+const Index: React.FC = () => {
   const { siteTitle, social } = useSiteMetadata()
 
   return (

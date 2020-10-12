@@ -1,9 +1,6 @@
 
-/* purgecss start ignore */
-// @tailwind base;
-// @tailwind components;
-@import "tailwindcss/base";
-@import "tailwindcss/components";
+@tailwind base;
+@tailwind components;
 
 html {
   @apply p-0 m-0 min-h-full;
@@ -167,78 +164,6 @@ a:hover {
   width: 80%;
 }
 
-
-
-// .header-link {
-//   @apply link text-white opacity-50 mr-6 trans-ani;
-// }
-
-// .header-link:hover {
-//   @apply opacity-90;
-// }
-
-// .header-link-active {
-//   @apply opacity-100;
-// }
-
-// .header-link-active:hover {
-//   @apply opacity-100;
-// }
-
-
-// .header-link-underline {
-//   @apply link pb-1 border-b-3 mr-8 border-solid font-semibold text-white uppercase opacity-70 trans-ani;
-// }
-
-// .header-link {
-//   @apply header-link-underline border-transparent ; 
-// }
-
-// header white
-
-// .header-link-base {
-//   @apply link  text-sm trans-ani; 
-// }
-
-// .header-link {
-//   @apply header-link-base text-white-60; 
-// }
-
-// .header-link:hover {
-//   @apply text-white-90;
-// }
-
-// .header-link-active {
-//   @apply header-link-base text-white-99; 
-// }
-
-// .header-link-active:hover {
-//   @apply text-white-99; 
-// }
-
-
-// header blue
-
-// .header-link-base {
-//   @apply block link trans-ani border-b-2 border-solid border-transparent py-1; 
-// }
-
-// .header-link {
-//   @apply header-link-base text-gray-900; 
-// }
-
-// .header-link:hover {
-//   @apply text-gray-900 border-gray-400;
-// }
-
-// .header-link-active {
-//   @apply header-link-base text-gray-900 border-gray-900; 
-// }
-
-// .header-link-active:hover {
-//   @apply text-gray-900 border-gray-900; 
-// }
-
 .header-link:after {
   @apply absolute trans-ani border-b-3 border-solid border-gray-700 left-0 -bottom-2 w-full;
   height: 3px;
@@ -292,13 +217,6 @@ a:hover {
   @apply float-left m-0 p-0;
 }
 
-// .breadcrumb li+li:before {
-//   padding-left: 1rem;
-//   padding-right: 1rem;
-//   color: black;
-//   content: "/";
-// }
-
 .breadcrumb-li:not(:last-child):after {
   @apply mx-4;
   content: "";
@@ -341,7 +259,6 @@ a:hover {
 
 h1 {
   @apply text-4xl  mb-2;
-  //font-family: Raleway;
 }
 
 h2 {
@@ -364,15 +281,9 @@ p {
   @apply mb-2;
 }
 
-
-
 .bg {
   background-image: url('../images/bg.jpg');
 }
-
-
-
-
 
 .hamburger {
   
@@ -422,15 +333,4 @@ p {
     translateY(0px);
 }
 
-
-
-
-
-// .card-shadow {
-//   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-// }
-
-/* purgecss end ignore */
-
-//@tailwind utilities;
-@import "tailwindcss/utilities";
+@tailwind utilities;

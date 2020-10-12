@@ -1,14 +1,8 @@
 // next.config.js
 const withPlugins = require("next-compose-plugins")
-const optimizedImages = require("next-optimized-images")
+const withOptimizedImages = require("next-optimized-images")
+//const withSass = require("@zeit/next-sass")
+//const withCss = require('@zeit/next-css')
+//const withPurgeCss = require("next-purgecss")
 
-module.exports = withPlugins([
-  [
-    optimizedImages,
-    {
-      /* config for next-optimized-images */
-    },
-  ],
-
-  // your other plugins here
-])
+module.exports = withPlugins([[withOptimizedImages, {}]])

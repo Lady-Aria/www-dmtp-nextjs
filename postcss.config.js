@@ -5,18 +5,53 @@ const purgecss = [
     content: [
       "./src/pages/**/*.{js,jsx,ts,tsx}",
       "./src/components/**/*.{js,jsx,ts,tsx}",
+      "./src/pages/*.{js,jsx,ts,tsx}",
+      "./src/components/*.{js,jsx,ts,tsx}",
     ],
-    // This is the function used to extract class names from the templates
-    defaultExtractor: content => {
-      // Capture as liberally as possible, including things like `h-(screen-1.5)`
-      const broadMatches = content.match(/[^<>"'`\\s]*[^<>"'`\\s:]/g) || []
-      // Capture classes within other delimiters like .block(class="w-1/2") in Pug
-      const innerMatches =
-        content.match(/[^<>"'`\\s.()]*[^<>"'`\\s.():]/g) || []
-      return broadMatches.concat(innerMatches)
-    },
+    defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
+    safelist: [
+      "html",
+      "body",
+      /w-/,
+      /list-/,
+      /-link/,
+      /gray-link/,
+      /DayPicker/,
+      /text-gray/,
+      /sm:hidden/,
+      /sm:block/,
+      /md:hidden/,
+      /md:block/,
+      /lg:hidden/,
+      /lg:block/,
+      /xl:hidden/,
+      /xl:block/,
+      /opacity/,
+      /flex-row/,
+      /bg-white/,
+      /w-80/,
+      /h-80/,
+      /h-120/,
+      /h-240/,
+      /p-0/,
+      /p-8/,
+      /p-6/,
+      /p-16/,
+      /pl-8/,
+      /pr-8/,
+      /mr-4/,
+      /justify-end/,
+      /xl:pl-8/,
+      /BrainhubCarousel/,
+      /bg-columbia/,
+      /bg-blue-900/,
+      /text-blue-400/,
+      /text-blue-500/,
+      /shadow-flat-card/,
+    ],
   },
 ]
+
 module.exports = {
   plugins: [
     "tailwindcss",

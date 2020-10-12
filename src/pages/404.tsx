@@ -3,12 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import useSiteMetadata from "../hooks/sitemetadata"
 
-type IndexProps = {
-  data: any
-  location: string
-}
-
-const NotFoundPage: React.FC<IndexProps> = ({ data, location }) => {
+const NotFoundPage: React.FC = () => {
   const { siteTitle } = useSiteMetadata()
 
   return (
