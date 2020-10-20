@@ -16,6 +16,8 @@ import amandaimg from "../assets/images/amanda.jpg"
 import laurenimg from "../assets/images/lauren.jpg"
 import chrisimg from "../assets/images/chris.jpg"
 import sierraimg from "../assets/images/sierra.jpg"
+import ashleighimg from "../assets/images/ashleigh.jpg"
+import SocialLinks from "../components/sociallinks"
 
 const Cast: React.FC = () => {
   const { siteTitle, social } = useSiteMetadata()
@@ -155,16 +157,32 @@ const Cast: React.FC = () => {
         </Row>
       </Container>
 
-      <Container className="text-center text-white py-32">
-        <div className="mt-16">
-          <ExtLink href={`https://www.instagram.com/${social.instagram}`}>
-            <FontAwesomeIcon
-              icon={["fab", "instagram"]}
-              className="text-white text-5xl"
+      <Container className="mt-8">
+        <Row wrap={true}>
+          <div className="w-full lg:w-3/12 mb-8">
+            <BWImage
+              fluid={ashleighimg}
+              alt="Ashleigh"
+              className="rounded-full"
             />
-          </ExtLink>
-        </div>
+          </div>
+          <div className="w-full lg:w-9/12 text-white-99 lg:pl-16">
+            Ashleigh Ciambriello (Set Photographer) is a photographer from
+            Orlando, Fl. She moved to NY in 2017 to pursue a career in the music
+            industry but she was never able to put the camera down. She
+            specializes in portraits and headshots but has also covered large
+            events, concerts, engagement sessions, and editorial shoots. She can
+            be contacted via instagram{" "}
+            <WhiteExtLink href="https://www.instagram.com/ashleighciambriellophotography">
+              @ashleighciambriellophotography
+            </WhiteExtLink>
+            . When she's not behind the camera or in the office, she's exploring
+            the city or hanging out at home with her cats Binx and Buddha. .
+          </div>
+        </Row>
       </Container>
+
+      <SocialLinks />
       {/* </AltView> */}
     </Layout>
   )

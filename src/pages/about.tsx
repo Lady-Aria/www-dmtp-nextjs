@@ -7,6 +7,7 @@ import SmallContainer from "../components/smallcontainer"
 import Container from "../components/container"
 import ExtLink from "../components/extlink"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import SocialLinks from "../components/sociallinks"
 
 const About: React.FC = () => {
   const { siteTitle, social } = useSiteMetadata()
@@ -53,16 +54,7 @@ const About: React.FC = () => {
         </p>
       </SmallContainer>
 
-      <Container className="text-center text-white py-32">
-        <div>
-          <ExtLink href={`https://www.instagram.com/${social.instagram}`}>
-            <FontAwesomeIcon
-              icon={["fab", "instagram"]}
-              className="text-white text-5xl"
-            />
-          </ExtLink>
-        </div>
-      </Container>
+      <SocialLinks />
     </Layout>
   )
 }

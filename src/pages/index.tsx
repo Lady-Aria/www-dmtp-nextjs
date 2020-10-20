@@ -9,6 +9,7 @@ import ExtLink from "../components/extlink"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Header from "../components/header"
 import title2img from "../assets/images/title2.png"
+import SocialLinks from "../components/sociallinks"
 
 const Index: React.FC = () => {
   const { siteTitle, social } = useSiteMetadata()
@@ -97,15 +98,8 @@ const Index: React.FC = () => {
             Sanderson Sisters shenanigans!
           </div>
         </div>
-        <div className="mt-16">
-          <ExtLink href={`https://www.instagram.com/${social.instagram}`}>
-            <FontAwesomeIcon
-              icon={["fab", "instagram"]}
-              className="text-white text-5xl"
-            />
-          </ExtLink>
-        </div>
       </Container>
+      <SocialLinks />
       {/* </AltView> */}
     </Layout>
   )
