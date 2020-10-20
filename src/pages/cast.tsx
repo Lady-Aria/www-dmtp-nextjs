@@ -177,7 +177,7 @@ const Cast: React.FC = () => {
               @ashleighciambriellophotography
             </WhiteExtLink>
             . When she's not behind the camera or in the office, she's exploring
-            the city or hanging out at home with her cats Binx and Buddha. .
+            the city or hanging out at home with her cats Binx and Buddha.
           </div>
         </Row>
       </Container>

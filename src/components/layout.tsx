@@ -44,7 +44,7 @@ const Layout: React.FC<LayoutProps> = ({ title, path, children }) => {
         <meta name="theme-color" content="#ffffff" />
       </Head>
 
-      <main className="min-screen-h bg-dark-gray shadow-card">{children}</main>
+      <main className="min-screen-h bg-dark-gray">{children}</main>
 
       <Footer />
     </>
