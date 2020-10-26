@@ -220,7 +220,7 @@ module.exports = {
         "black-80": "rgba(0, 0, 0, 0.8)",
         "black-90": "rgba(0, 0, 0, 0.9)",
         "black-95": "rgba(0, 0, 0, 0.95)",
-        "dark-gray": "rgb(15, 20, 25)",
+        "dark-gray": "rgb(10, 10, 10)",
         "default-color": "#4a5568",
       },
       borderRadius: {

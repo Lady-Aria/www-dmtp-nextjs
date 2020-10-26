@@ -77,13 +77,28 @@ const Index: React.FC = () => {
         </Row> */}
         <Row isCentered={true}>
           <div className="w-full lg:w-4/10 mt-4">
-            <ZoomImage fluid={title2img} alt="Title 2" />
+            <ZoomImage fluid={title2img} alt="Secondary Title" />
           </div>
         </Row>
       </Container>
 
-      <Container className="text-center text-white py-32">
-        <div className="lg:px-96">
+      <Container className="py-16">
+        <Row isCentered={true}>
+          <div>
+            <iframe
+              className="block"
+              src="https://embed.restream.io/player/index.html?token=5819895f61778f3f1d12b3b18d6a1967"
+              width="960"
+              height="576"
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </Row>
+      </Container>
+
+      <Container className="text-center text-white py-16">
+        <div className="lg:px-72 xl:px-96">
           <div className="text-xl">
             {/* <ExtLink href={`mailto:casting@deadmanstoeproductions.com`}>
             casting@deadmanstoeproductions.com

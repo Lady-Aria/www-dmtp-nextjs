@@ -33,7 +33,7 @@ const Header: React.FC = () => (
       className="absolute left-0 top-0 w-full h-full z-10"
       style={{
         background:
-          "linear-gradient(180deg, rgb(15, 20, 25, 0) 0%, rgb(15, 20, 25, 1) 80%, rgb(15, 20, 25, 1) 100%)",
+          "linear-gradient(180deg, rgb(10, 10, 10, 0) 0%, rgb(10, 10, 10, 1) 80%, rgb(10, 10, 10, 1) 100%)",
       }}
     />
 

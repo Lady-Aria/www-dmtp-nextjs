@@ -9,7 +9,7 @@ const SocialLinks = () => {
   const { siteTitle, social } = useSiteMetadata()
 
   return (
-    <Container className="py-32">
+    <Container className="py-16">
       <Row isCentered={true} className="text-white">
         <div className="mx-4">
           <ExtLink

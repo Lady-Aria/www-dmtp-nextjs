@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  @apply relative p-0 m-0 bg-gray-800 min-h-full;
+  @apply relative p-0 m-0 bg-gray-900 min-h-full;
 }
 
 .navbar {
@@ -332,5 +332,7 @@ p {
     rotate(-45deg) 
     translateY(0px);
 }
+
+
 
 @tailwind utilities;
