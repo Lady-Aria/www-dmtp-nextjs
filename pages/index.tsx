@@ -19,7 +19,7 @@ const Index: React.FC = () => {
 
       <Header />
 
-      <Container className="py-8">
+      <Container className="py-4">
         <Row isCentered={true}>
           <div>
             <iframe
