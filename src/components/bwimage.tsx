@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import Image from "next/image"
 
 type BWImageProps = {
-  fluid: string
+  fluid: any
   extZoom?: any
   alt?: string
   className?: string
@@ -55,12 +55,10 @@ export const BWImage: React.FC<BWImageProps> = ({
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      <Image
+      <img
         src={fluid}
         className={`trans-ani w-full h-full ${className}`}
         alt={alt}
-        width={size[0]}
-        height={size[1]}
       />
     </div>
   )

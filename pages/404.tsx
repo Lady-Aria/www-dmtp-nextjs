@@ -1,7 +1,7 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import useSiteMetadata from "../hooks/sitemetadata"
+import Layout from "../src/components/layout"
+import SEO from "../src/components/seo"
+import useSiteMetadata from "../src/hooks/sitemetadata"
 
 const NotFoundPage: React.FC = () => {
   const { siteTitle } = useSiteMetadata()

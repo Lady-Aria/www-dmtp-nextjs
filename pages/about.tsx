@@ -1,13 +1,13 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import useSiteMetadata from "../hooks/sitemetadata"
-import Header from "../components/header"
-import SmallContainer from "../components/smallcontainer"
-import Container from "../components/container"
-import ExtLink from "../components/extlink"
+import Layout from "../src/components/layout"
+import SEO from "../src/components/seo"
+import useSiteMetadata from "../src/hooks/sitemetadata"
+import Header from "../src/components/header"
+import SmallContainer from "../src/components/smallcontainer"
+import Container from "../src/components/container"
+import ExtLink from "../src/components/extlink"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import SocialLinks from "../components/sociallinks"
+import SocialLinks from "../src/components/sociallinks"
 
 const About: React.FC = () => {
   const { siteTitle, social } = useSiteMetadata()

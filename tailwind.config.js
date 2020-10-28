@@ -5,6 +5,7 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
+  purge: ["./pages/**/*.tsx", "./src/**/*.tsx"],
   theme: {
     fontFamily: {
       sans: ["Inter"],

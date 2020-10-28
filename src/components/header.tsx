@@ -6,6 +6,7 @@ import WhiteLink from "./whitelink"
 import Link from "next/link"
 import AltView from "./altview"
 import ZoomImage from "./zoomimage"
+import title1img from "../../public/images/title1.png"
 
 type ImgProps = {
   className?: string
@@ -43,7 +44,7 @@ const Header: React.FC = () => (
               <div className="w-6/10">
                 <Link href="/">
                   <a>
-                    <ZoomImage fluid="/images/title1.png" alt="Title" />
+                    <ZoomImage fluid={title1img} alt="Title" />
                   </a>
                 </Link>
               </div>
@@ -65,11 +66,7 @@ const Header: React.FC = () => (
               <div className="w-4/10">
                 <Link href="/">
                   <a>
-                    <ZoomImage
-                      fluid="/images/title1.png"
-                      size={[3600, 2225]}
-                      alt="Title"
-                    />
+                    <ZoomImage fluid={title1img} alt="Title" />
                   </a>
                 </Link>
               </div>

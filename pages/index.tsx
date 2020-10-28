@@ -1,13 +1,14 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import useSiteMetadata from "../hooks/sitemetadata"
-import Row from "../components/row"
-import ZoomImage from "../components/zoomimage"
-import Container from "../components/container"
-import ExtLink from "../components/extlink"
-import Header from "../components/header"
-import SocialLinks from "../components/sociallinks"
+import Layout from "../src/components/layout"
+import SEO from "../src/components/seo"
+import useSiteMetadata from "../src/hooks/sitemetadata"
+import Row from "../src/components/row"
+import ZoomImage from "../src/components/zoomimage"
+import Container from "../src/components/container"
+import ExtLink from "../src/components/extlink"
+import Header from "../src/components/header"
+import title2img from "../public/images/title2.png"
+import SocialLinks from "../src/components/sociallinks"
 
 const Index: React.FC = () => {
   const { siteTitle, social } = useSiteMetadata()
@@ -54,7 +55,7 @@ const Index: React.FC = () => {
       <Container className="py-8">
         <Row isCentered={true}>
           <div className="w-full lg:w-4/10 mt-4">
-            <ZoomImage fluid="/images/title2.png" alt="Secondary Title" />
+            <ZoomImage fluid={title2img} alt="Secondary Title" />
           </div>
         </Row>
       </Container>
