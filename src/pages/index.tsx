@@ -6,9 +6,7 @@ import Row from "../components/row"
 import ZoomImage from "../components/zoomimage"
 import Container from "../components/container"
 import ExtLink from "../components/extlink"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Header from "../components/header"
-import title2img from "../assets/images/title2.png"
 import SocialLinks from "../components/sociallinks"
 
 const Index: React.FC = () => {
@@ -20,69 +18,7 @@ const Index: React.FC = () => {
 
       <Header />
 
-      {/* <AltView size="md"> */}
-      {/* <div>
-            <Img
-              fluid={data.casting1.childImageSharp.fluid}
-              alt="Casting 1"
-              className="w-full"
-            />
-            <Img
-              fluid={data.casting2.childImageSharp.fluid}
-              alt="Casting 2"
-              className="w-full"
-            />
-            <Img
-              fluid={data.casting3.childImageSharp.fluid}
-              alt="Casting 3"
-              className="w-full"
-            />
-          </div> */}
-
-      <Container className="mt-4">
-        {/* <Row wrap={true} className="justify-between">
-          <div className="w-full lg:w-12/50 shadow-md mt-4">
-            <ZoomImage
-              fluid={data.casting1.childImageSharp.fluid}
-              alt="Casting 1"
-            />
-          </div>
-          <div className="w-full lg:w-12/50 shadow-md mt-4">
-            <ZoomImage
-              fluid={data.casting3.childImageSharp.fluid}
-              alt="Casting 3"
-            />
-          </div>
-          <div className="w-full lg:w-12/50 shadow-md mt-4">
-            <ZoomImage
-              fluid={data.casting4.childImageSharp.fluid}
-              alt="Casting 4"
-            />
-          </div>
-          <div className="w-full lg:w-12/50 shadow-md mt-4">
-            <ZoomImage
-              fluid={data.casting5.childImageSharp.fluid}
-              alt="Casting 5"
-            />
-          </div>
-        </Row> */}
-
-        {/* <Row isCentered={true}>
-          <div className="w-full lg:w-4/12 shadow-md mt-4">
-            <ZoomImage
-              fluid={data.title1.childImageSharp.fluid}
-              alt="Title 1"
-            />
-          </div>
-        </Row> */}
-        <Row isCentered={true}>
-          <div className="w-full lg:w-4/10 mt-4">
-            <ZoomImage fluid={title2img} alt="Secondary Title" />
-          </div>
-        </Row>
-      </Container>
-
-      <Container className="py-16">
+      <Container className="py-8">
         <Row isCentered={true}>
           <div>
             <iframe
@@ -97,7 +33,7 @@ const Index: React.FC = () => {
         </Row>
       </Container>
 
-      <Container className="text-center text-white py-16">
+      <Container className="text-center text-white py-8">
         <div className="lg:px-72 xl:px-96">
           <div className="text-xl">
             {/* <ExtLink href={`mailto:casting@deadmanstoeproductions.com`}>
@@ -105,7 +41,7 @@ const Index: React.FC = () => {
           </ExtLink> */}
             Sisters! Tis time! Dead Man's Toe Productions is pleased to announce
             that Bring Us to Life, A Hocus Pocus Parody will premiere October
-            28th at 7pm (viewing link TBD)! Be sure to follow us on Instagram at{" "}
+            28th at 7pm! Watch it here and be sure to follow us on Instagram at{" "}
             <ExtLink href={`https://www.instagram.com/${social.instagram}`}>
               @dmt.prod
             </ExtLink>{" "}
@@ -114,6 +50,15 @@ const Index: React.FC = () => {
           </div>
         </div>
       </Container>
+
+      <Container className="py-8">
+        <Row isCentered={true}>
+          <div className="w-full lg:w-4/10 mt-4">
+            <ZoomImage fluid="/images/title2.png" alt="Secondary Title" />
+          </div>
+        </Row>
+      </Container>
+
       <SocialLinks />
       {/* </AltView> */}
     </Layout>

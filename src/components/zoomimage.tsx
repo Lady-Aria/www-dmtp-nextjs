@@ -1,18 +1,19 @@
 import React, { useState, useRef } from "react"
-import Img from "./img"
+import Image from "next/image"
 
 type ZoomImageProps = {
-  fluid: any
+  fluid: string
   extZoom?: any
   zoom?: number
   alt?: string
   className?: string
+  size?: [number, number]
 }
 
 export const ZoomImage: React.FC<ZoomImageProps> = ({
   fluid,
   extZoom,
-  zoom,
+  size,
   alt,
   className,
 }) => {
@@ -54,10 +55,12 @@ export const ZoomImage: React.FC<ZoomImageProps> = ({
       onMouseLeave={onMouseLeave}
       ref={photoEl}
     >
-      <Img
-        fluid={fluid}
+      <Image
+        src={fluid}
         className={`trans-ani w-full h-full ${className}`}
         alt={alt}
+        width={size[0]}
+        height={size[1]}
       />
     </div>
   )
@@ -68,6 +71,7 @@ ZoomImage.defaultProps = {
   extZoom: null,
   zoom: 1.05,
   alt: "",
+  size: [1000, 1000],
 }
 
 export default ZoomImage

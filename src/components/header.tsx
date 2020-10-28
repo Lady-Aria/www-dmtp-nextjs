@@ -3,11 +3,9 @@ import styled from "styled-components"
 import Container from "./container"
 import Row from "./row"
 import WhiteLink from "./whitelink"
-import logosvg from "../assets/svg/logo.svg"
 import Link from "next/link"
 import AltView from "./altview"
 import ZoomImage from "./zoomimage"
-import title1img from "../assets/images/title1.png"
 
 type ImgProps = {
   className?: string
@@ -45,7 +43,7 @@ const Header: React.FC = () => (
               <div className="w-6/10">
                 <Link href="/">
                   <a>
-                    <ZoomImage fluid={title1img} alt="Title" />
+                    <ZoomImage fluid="/images/title1.png" alt="Title" />
                   </a>
                 </Link>
               </div>
@@ -67,7 +65,11 @@ const Header: React.FC = () => (
               <div className="w-4/10">
                 <Link href="/">
                   <a>
-                    <ZoomImage fluid={title1img} alt="Title" />
+                    <ZoomImage
+                      fluid="/images/title1.png"
+                      size={[3600, 2225]}
+                      alt="Title"
+                    />
                   </a>
                 </Link>
               </div>

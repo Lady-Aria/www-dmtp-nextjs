@@ -1,11 +1,12 @@
 import React, { useState } from "react"
-import Img from "./img"
+import Image from "next/image"
 
 type BWImageProps = {
   fluid: string
   extZoom?: any
   alt?: string
   className?: string
+  size?: [number, number]
 }
 
 export const BWImage: React.FC<BWImageProps> = ({
@@ -13,6 +14,7 @@ export const BWImage: React.FC<BWImageProps> = ({
   extZoom,
   alt,
   className,
+  size,
 }) => {
   const [hover, setHover] = useState(false)
 
@@ -53,10 +55,12 @@ export const BWImage: React.FC<BWImageProps> = ({
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      <Img
-        fluid={fluid}
+      <Image
+        src={fluid}
         className={`trans-ani w-full h-full ${className}`}
         alt={alt}
+        width={size[0]}
+        height={size[1]}
       />
     </div>
   )
@@ -66,6 +70,7 @@ BWImage.defaultProps = {
   className: "",
   extZoom: null,
   alt: "",
+  size: [1000, 1000],
 }
 
 export default BWImage

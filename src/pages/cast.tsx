@@ -5,18 +5,10 @@ import useSiteMetadata from "../hooks/sitemetadata"
 
 import Row from "../components/row"
 import Container from "../components/container"
-import ExtLink from "../components/extlink"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Header from "../components/header"
 import BWImage from "../components/bwimage"
 import WhiteExtLink from "../components/whiteextlink"
 
-import ariannaimg from "../assets/images/arianna.jpg"
-import amandaimg from "../assets/images/amanda.jpg"
-import laurenimg from "../assets/images/lauren.jpg"
-import chrisimg from "../assets/images/chris.jpg"
-import sierraimg from "../assets/images/sierra.jpg"
-import ashleighimg from "../assets/images/ashleigh.jpg"
 import SocialLinks from "../components/sociallinks"
 
 const Cast: React.FC = () => {
@@ -32,7 +24,7 @@ const Cast: React.FC = () => {
         <Row wrap={true} className="w-full">
           <div className="w-full lg:w-3/12 mb-8">
             <BWImage
-              fluid={ariannaimg}
+              fluid="/images/arianna.jpg"
               alt="Arianna"
               className="rounded-full"
             />
@@ -60,7 +52,11 @@ const Cast: React.FC = () => {
       <Container className="mt-8">
         <Row wrap={true}>
           <div className="w-full lg:w-3/12 mb-8">
-            <BWImage fluid={amandaimg} alt="Amanda" className="rounded-full" />
+            <BWImage
+              fluid="/images/amanda.jpg"
+              alt="Amanda"
+              className="rounded-full"
+            />
           </div>
           <div className="w-full lg:w-9/12 text-white-99 lg:pl-16">
             Amanda Lee Myers (Sarah Sanderson): Amanda is thrilled to return to
@@ -89,7 +85,11 @@ const Cast: React.FC = () => {
       <Container className="mt-8">
         <Row wrap={true}>
           <div className="w-full lg:w-3/12 mb-8">
-            <BWImage fluid={laurenimg} alt="Lauren" className="rounded-full" />
+            <BWImage
+              fluid="/images/lauren.jpg"
+              alt="Lauren"
+              className="rounded-full"
+            />
           </div>
           <div className="w-full lg:w-9/12 text-white-99 lg:pl-16">
             Lauren Gismondi (Mary Sanderson and Screenwriter) is a native NYer
@@ -113,7 +113,11 @@ const Cast: React.FC = () => {
       <Container className="mt-8">
         <Row wrap={true}>
           <div className="w-full lg:w-3/12 mb-8">
-            <BWImage fluid={chrisimg} alt="Chris" className="rounded-full" />
+            <BWImage
+              fluid="/images/chris.jpg"
+              alt="Chris"
+              className="rounded-full"
+            />
           </div>
           <div className="w-full lg:w-9/12 text-white-99 lg:pl-16">
             Christopher Robert Prozeller (Anita Lyft) is a New York based actor
@@ -136,7 +140,11 @@ const Cast: React.FC = () => {
       <Container className="mt-8">
         <Row wrap={true}>
           <div className="w-full lg:w-3/12 mb-8">
-            <BWImage fluid={sierraimg} alt="Sierra" className="rounded-full" />
+            <BWImage
+              fluid="/images/sierra.jpg "
+              alt="Sierra"
+              className="rounded-full"
+            />
           </div>
           <div className="w-full lg:w-9/12 text-white-99 lg:pl-16">
             Sierra Rein (Producer, Editor, Props) has produced a "Christmas in
@@ -161,7 +169,7 @@ const Cast: React.FC = () => {
         <Row wrap={true}>
           <div className="w-full lg:w-3/12 mb-8">
             <BWImage
-              fluid={ashleighimg}
+              fluid="/images/ashleigh.jpg"
               alt="Ashleigh"
               className="rounded-full"
             />
